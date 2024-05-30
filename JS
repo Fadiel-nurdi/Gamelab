@@ -1,0 +1,39 @@
+$(document).ready(function() {
+    // Add class
+    $('#addClassBtn').click(function() {
+      $('#text').addClass('highlight');
+    });
+  
+    // Remove class
+    $('#removeClassBtn').click(function() {
+      $('#text').removeClass('highlight');
+    });
+  
+    // Toggle class
+    $('#toggleClassBtn').click(function() {
+      $('#text').toggleClass('highlight');
+    });
+  
+    // Check if element has class
+    $('#hasClassBtn').click(function() {
+      if ($('#text').hasClass('highlight')) {
+        alert('The element has the highlight class.');
+      } else {
+        alert('The element does not have the highlight class.');
+      }
+    });
+  
+    // Show and hide elements with fade effect
+    $('#hideBtn').click(function() {
+      $('#text').fadeOut(500);
+    });
+  
+    $('#showBtn').click(function() {
+      $('#text').fadeIn(500);
+    });
+  
+    // Change text content
+    $('#changeTextBtn').click(function() {
+      $('#text').text('The text has been changed!');
+    });
+  });
